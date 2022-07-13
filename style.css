@@ -1,0 +1,172 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem=10px*/
+  font-family: 'Asap', sans-serif;
+}
+.logo{
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-style: italic;
+}
+.container{
+ padding: 0 3rem;
+}
+.header__section--colorB{
+  background: #EB1414;
+}
+.carrito-padre{
+  position: relative;
+  cursor: pointer;
+}
+.cantidad{
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 600;
+  top: -0;
+  left: -12;
+  background: #fff;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  
+}
+.cantidad>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.carrito{
+  width: 4rem;
+  height: 4rem;
+  color: #fff;
+  
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2.5rem;
+}
+.buscador-productos{
+  width: 54rem;
+  height: 4rem;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  border: 0.1rem solid #fff;
+  background: none;
+  color: #fff;
+  outline: none;
+  font-size: 1.5rem;
+}
+.buscador-productos::placeholder{
+  color: #fff;
+
+}
+.buscador-productos:hover{
+  border: 0.2rem solid #fff;
+}
+
+/* Menu de navegacion*/
+.nav{
+  background: #fff;
+}
+.listaProductos--ul{
+ 
+  margin: 1.5rem 0;
+  list-style: none;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.listaProductos--ul>li{
+  padding: 0 2.5rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+.listaProductos--ul>li:hover{
+  color: #EB1414;
+}
+/* END Menu de navegacion*/
+
+
+/*BANNER*/
+.banner-imagen{
+width: 100%;
+}
+/*END Banner*/
+
+
+/* MAIN - Tarjetas de productos*/
+.productos{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.tarjeta{
+  padding: 0 1.5rem 0 0;
+  margin-top: 8rem;
+}
+.tarjeta__img{
+  width: 30rem;
+  
+}
+.tarjeta__header{
+  padding: 0 0.8rem;
+}
+.tarjeta__titulo{
+  font-size: 1.6rem;
+}
+.tarjeta__precio{
+  margin: 0.8rem 0;
+  font-size: 3rem;
+  color: #EB1414;
+}
+.tarjeta__footer{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.tarjeta__btnAgregar{
+  width: 100%;
+  padding: 1.3rem 0;
+  background: #EB1414;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+.tarjeta__btnAgregar:hover{
+  background: #d12525;
+}
+
+.titulo-mejoresProductos{
+  font-size: 3.5rem;
+  color: #16161C;
+}
+
+/* END  MAIN - Tarjetas de productos*/
+.footer{
+  margin-top: 5rem;
+  padding: 5rem;
+  background: #E7EAED;
+  
+}
+.footer__parrafo{
+text-align: center;
+font-size: 1.8rem;
+}
+
+.mt-50{
+  margin-top: 5rem;
+}

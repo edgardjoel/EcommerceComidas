@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Fuentes de google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!--Estilos-->
+  <link rel="stylesheet" href="style.css">
+
+  <!--javaScript-->
+  <script src="main.js"></script>
+  <title>Carrito de compras</title>
+</head>
+
+<body>
+
+  <!--Utilizar BEM - BLOQUE ELEMENTO MODIFICADOR-->
+
+  <header class="header">
+    <!--Seccion del logo y el total del carrito-->
+    <section class=" container row header__section--colorB">
+      <!--Logo-->
+      <label class="logo">
+        RappiComidas
+      </label>
+      <input type="text" class="buscador-productos" placeholder="Buscar productos">
+      
+      <div class="carrito-padre">
+        <svg class="carrito" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+        </svg>
+        <div class="cantidad">
+          <div><p>1</p></div>
+        </div>
+      </div>
+      
+    </section>
+    <!--Menu-->
+    <nav class="nav">
+      <ul class="listaProductos--ul">
+        <li>Frutas y verduras</li>
+        <li>Bebidas</li>
+        <li>Abarrotes</li>
+        <li>Carnes</li>
+        <li>Pasteleria</li>
+      </ul>
+    </nav>
+    <!--End menu-->
+  </header>
+  <section class="banner">
+    <img src="./img/banner.png" alt="" class="banner-imagen">
+  </section>
+
+  <!--Lista de productos-->
+  <main class="container mt-50">
+    <h1 class="titulo-mejoresProductos">Los mejores Productos</h1>
+    <section class="productos">
+      <div class="tarjeta">
+        <img src="./img/pollo.png" alt="" class="tarjeta__img">
+        <header class="tarjeta__header">
+          <p class="tarjeta__titulo">Pollo fresco Entero</p>
+          <p class="tarjeta__precio">S/27</p>
+        </header>
+        <footer class="tarjeta__footer">
+          <button class="tarjeta__btnAgregar">Agregar Carrito</button>
+        </footer>
+      </div>
+      <div class="tarjeta">
+        <img src="./img/cereal.png" alt="" class="tarjeta__img">
+        <header class="tarjeta__header">
+          <p class="tarjeta__titulo">Cereal</p>
+          <p class="tarjeta__precio">S/27</p>
+        </header>
+        <footer class="tarjeta__footer">
+          <button class="tarjeta__btnAgregar">Agregar Carrito</button>
+        </footer>
+      </div>
+      <div class="tarjeta">
+        <img src="./img/blacktea.png" alt="" class="tarjeta__img">
+        <header class="tarjeta__header">
+          <p class="tarjeta__titulo">Blacktea fresco Entero</p>
+          <p class="tarjeta__precio">S/27</p>
+        </header>
+        <footer class="tarjeta__footer">
+          <button class="tarjeta__btnAgregar">Agregar Carrito</button>
+        </footer>
+      </div>
+      <div class="tarjeta">
+        <img src="./img/fresas.png" alt="" class="tarjeta__img">
+        <header class="tarjeta__header">
+          <p class="tarjeta__titulo">Pollo fresco Entero</p>
+          <p class="tarjeta__precio">S/27</p>
+        </header>
+        <footer class="tarjeta__footer">
+          <button class="tarjeta__btnAgregar">Agregar Carrito</button>
+        </footer>
+      </div>
+      <div class="tarjeta">
+        <img src="./img/Herbal.png" alt="" class="tarjeta__img">
+        <header class="tarjeta__header">
+          <p class="tarjeta__titulo">Herbal fresco Entero</p>
+          <p class="tarjeta__precio">S/27</p>
+        </header>
+        <footer class="tarjeta__footer">
+          <button class="tarjeta__btnAgregar">Agregar Carrito</button>
+        </footer>
+      </div>
+      <div class="tarjeta">
+        <img src="./img/palta.png" alt="" class="tarjeta__img">
+        <header class="tarjeta__header">
+          <p class="tarjeta__titulo">Palta fresco Entero</p>
+          <p class="tarjeta__precio">S/27</p>
+        </header>
+        <footer class="tarjeta__footer">
+          <button class="tarjeta__btnAgregar">Agregar Carrito</button>
+        </footer>
+      </div>
+      <div class="tarjeta">
+        <img src="./img/cafe.png" alt="" class="tarjeta__img">
+        <header class="tarjeta__header">
+          <p class="tarjeta__titulo">Pollo fresco Entero</p>
+          <p class="tarjeta__precio">S/27</p>
+        </header>
+        <footer class="tarjeta__footer">
+          <button class="tarjeta__btnAgregar">Agregar Carrito</button>
+        </footer>
+      </div>
+      <div class="tarjeta">
+        <img src="./img/pescado.png" alt="" class="tarjeta__img">
+        <header class="tarjeta__header">
+          <p class="tarjeta__titulo">Pollo fresco Entero</p>
+          <p class="tarjeta__precio">S/27</p>
+        </header>
+        <footer class="tarjeta__footer">
+          <button class="tarjeta__btnAgregar">Agregar Carrito</button>
+        </footer>
+      </div>
+  
+      <div class="tarjeta">
+        <img src="./img/pollo.png" alt="" class="tarjeta__img">
+        <header class="tarjeta__header">
+          <p class="tarjeta__titulo">Pollo fresco Entero</p>
+          <p class="tarjeta__precio">S/27</p>
+        </header>
+        <footer class="tarjeta__footer">
+          <button class="tarjeta__btnAgregar">Agregar Carrito</button>
+        </footer>
+      </div>
+      <div class="tarjeta">
+        <img src="./img/pollo.png" alt="" class="tarjeta__img">
+        <header class="tarjeta__header">
+          <p class="tarjeta__titulo">Pollo fresco Entero</p>
+          <p class="tarjeta__precio">S/27</p>
+        </header>
+        <footer class="tarjeta__footer">
+          <button class="tarjeta__btnAgregar">Agregar Carrito</button>
+        </footer>
+      </div>
+    </section>
+    
+  </main>
+
+  <footer class="footer">
+    <p class="footer__parrafo">Todos los derechos reservados por RappiComidas - 2022</p>
+  </footer>
+</body>
+
+</html>
